@@ -1,17 +1,26 @@
-
-//Write a Java program to determine the sign of a given number (positive, negative, or zero) using the ternary operator?//
+//Write a program to check whether a number is negative, positive or zero?//
 
 import java.util.Scanner;
 class Sign
 {
  public static void main(String args[])
- {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter number:");
+{
+ 	Scanner sc=new Scanner(System.in);
 	int a=sc.nextInt();
-	String s= (a==0)?"Zero":((a<0)?"Negative":"Positive");
-	System.out.println(s);
+	if (a!=0)
+	{
+		if (a>0)
+		{
+			System.out.println(a+" is Positive");
+		}
+		else
+		{
+			System.out.println(a+" is Negative");
+		}
+		
+	}
+	else
+		System.out.println(a+" is Zero");
 	
- }
 }
-
+}
